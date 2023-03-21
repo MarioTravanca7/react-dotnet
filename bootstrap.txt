@@ -1,0 +1,6 @@
+https://getbootstrap.com/docs/5.3/components/list-group/ -> Site 
+
+colocar o "import 'bootstrap/dist/css/bootstrap.min.css';"
+no index.js
+
+Ir aos components e usar os padrões que eles tem lá

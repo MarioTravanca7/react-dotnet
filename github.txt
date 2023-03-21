@@ -1,0 +1,24 @@
+1-New repository
+2-name 
+3-Public or Private
+4- Creating repository
+5-seguir os passos:
+    -git init
+    -git status
+    -git add .
+    -
+
+…or create a new repository on the command line
+echo "# react-dotnet" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/MarioTravanca7/react-dotnet.git
+git push -u origin main
+
+
+6- git commit:
+    -Aba dos commit (normalmente é a 3º vertical no VS code)
+    -escrever o commit
+    -tocar no V (logo em cima)

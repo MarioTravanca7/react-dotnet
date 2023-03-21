@@ -1,0 +1,32 @@
+linha de comandos:
+npm --version // ver a versão do react
+node --version // ver a versão do node
+npx create-react-app pro-ativitade-app // criação do projeto react
+npm i -g create-react-app
+npx create-react-app pro-ativitade-app1 --use-npm // forçar a utilizacao do npm em vez do yarn
+
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd pro-ativitade-app
+  npm start
+
+npx create-react-app pro-ativitade-app2 --use-npm --template typescript // cria projecto usando typescript em vez javascript
+
+npm install bootstrap // instalar bootstrap
+
+
+npm i --save @fortawesome/fontawesome-svg-core // instalar o fontawesome
