@@ -18,3 +18,25 @@ rodar -> cd ProAtividade.API
 caso de erros: (quando se faz o primeiro dotnet run) nao me deu erros
 ->dotnet dev-certs https --clean
 experimentar a reiniciar o pc
+
+dotnet tool install --global dotnet-ef 
+dotnet add package Microsoft.EntityFrameworkCore.SQLite
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+
+Criar a class DataContext
+ir ao Program.cs e adicionar:
+builder.Services.AddDbContext<DataContext>(
+    options => options.UseSqlite(builder.Configuration.GetConnectionString("Default"))
+);
+ir ao appsettings.Development.json e adicionar:
+  "ConnectionStrings": {
+    "Default" : "Data source=ProAtividade.db"
+  },
+
+Migrations -> dentro da pasta ProAtividade.API
+Migrations: ficheiro baseado no DataContext
+cmd: dotnet ef migrations add initial -o Data/Migrations
+cmd: dotnet build -> ver se tem erros
+cmd: dotnet ef database update
