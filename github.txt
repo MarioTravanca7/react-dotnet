@@ -21,4 +21,5 @@ git push -u origin main
 6- git commit:
     -Aba dos commit (normalmente é a 3º vertical no VS code)
     -escrever o commit
-    -tocar no V (logo em cima)
+    -tocar no +
+    -tocar no commit
