@@ -23,3 +23,6 @@ git push -u origin main
     -escrever o commit
     -tocar no +
     -tocar no commit
+    -git status
+    -git remote add origin https://github.com/MarioTravanca7/react-dotnet.git
+    -public 

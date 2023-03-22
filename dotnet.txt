@@ -1,0 +1,20 @@
+Criar o ficheiro .json
+linha de comandos:
+dentro da pasta src -> dotnet --version
+-> dotnet -h -> ver as opcoes
+-> dotnet -info -> ver info
+-> dotnet new
+-> dotnet --list-sdks
+-> dotnet new globaljson -> criar  ////////
+-> dotnet new globaljson "6.0.4" -> criar com outra versão sem ser a ultima
+
+Criar o projecto
+-> dotnet new webapi -n ProAtividade.API
+
+
+rodar -> cd ProAtividade.API
+-> dotnet run
+
+caso de erros: (quando se faz o primeiro dotnet run) nao me deu erros
+->dotnet dev-certs https --clean
+experimentar a reiniciar o pc
