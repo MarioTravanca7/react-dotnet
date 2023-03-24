@@ -1,2 +1,6 @@
 npm run start:
 ->roda o index.js -> chama a App.js
+
+
+Axios: entrar em contato com o backend
+npm install --save axios -> dentro da pasta de ProAtividade

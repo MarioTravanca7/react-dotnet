@@ -32,11 +32,11 @@ namespace ProAtividade.API.Controllers
         }
 
         [HttpPost]
-        public IEnumerable<Atividade> post(Atividade atividade)
+        public Atividade post(Atividade atividade)
         {
             _context.Atividades.Add(atividade);
             if (_context.SaveChanges() > 0)
-                return _context.Atividades;
+                return _context.Atividades.FirstOrDefault(ati => ati.Id == atividade.Id);
             else
                 throw new Exception("Nao conseguiste add uma atividade");
         }
@@ -47,7 +47,6 @@ namespace ProAtividade.API.Controllers
             if (atividade.Id != id) throw new Exception("Estas a tentar atualizar a atividade errada");
 
             _context.Update(atividade);
-
             if (_context.SaveChanges() > 0)
                 return _context.Atividades.FirstOrDefault(ativ => ativ.Id == id);
             else

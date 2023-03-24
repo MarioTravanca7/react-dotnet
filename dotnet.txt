@@ -39,4 +39,4 @@ Migrations -> dentro da pasta ProAtividade.API
 Migrations: ficheiro baseado no DataContext
 cmd: dotnet ef migrations add initial -o Data/Migrations
 cmd: dotnet build -> ver se tem erros
-cmd: dotnet ef database update
+cmd: dotnet ef database update // apagar antes a BD - depois fazer

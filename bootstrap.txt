@@ -4,3 +4,6 @@ colocar o "import 'bootstrap/dist/css/bootstrap.min.css';"
 no index.js
 
 Ir aos components e usar os padrões que eles tem lá
+
+folder: front/Pro-Atividade-app
+cmd: npm install react-bootstrap@next
