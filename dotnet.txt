@@ -13,7 +13,7 @@ Criar o projecto
 
 
 rodar -> cd ProAtividade.API
--> dotnet run
+-> dotnet run / dotnet watch run
 
 caso de erros: (quando se faz o primeiro dotnet run) nao me deu erros
 ->dotnet dev-certs https --clean
@@ -40,3 +40,26 @@ Migrations: ficheiro baseado no DataContext
 cmd: dotnet ef migrations add initial -o Data/Migrations
 cmd: dotnet build -> ver se tem erros
 cmd: dotnet ef database update // apagar antes a BD - depois fazer
+
+Para criar os ficheiros .sln -> dentro da pasta back/src
+cmd: dotnet new sln -n ProAtividade
+
+-> dentro da pasta back/src
+cmd:dotnet new classlib -n ProAtividade.Domain
+
+-> dentro da pasta back/src
+cmd:dotnet new classlib -n ProAtividade.Data
+
+-> dentro da pasta back/src
+cmd: dotnet sln ProAtividade.sln add ProAtividade.API
+cmd: dotnet sln ProAtividade.sln add ProAtividade.Data
+cmd: dotnet sln ProAtividade.sln add ProAtividade.Domain
+cmd: dotnet restore
+cmd: dotnet add ProAtividade.API reference ProAtividade.Data
+cmd: dotnet add ProAtividade.API reference ProAtividade.Domain
+cmd: dotnet add ProAtividade.Data reference ProAtividade.Domain
+
+Migrations (quanto já se tem os 3 sln)
+cmd back/src: dotnet ef migrations add initial -p Proatividade.Data -s ProAtividade.API
+cmd back/src: dotnet ef database update -s Proatividade.API
+cmd back/src/Proatividade.API
