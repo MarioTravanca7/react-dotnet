@@ -4,3 +4,12 @@ npm run start:
 
 Axios: entrar em contato com o backend
 npm install --save axios -> dentro da pasta de ProAtividade
+
+
+instalar bootswatch (a primeira vez que vamos utilizar é para a navbar)
+cmd front/ProAtividade-app: npm install bootswatch 
+-> import: import 'bootswatch/dist/slate/bootstrap.min.css';
+
+
+instalar React Rotas -> https://reactrouter.com/en/main
+cmd front/ProAtividade-app: npm install react-router-dom --save
