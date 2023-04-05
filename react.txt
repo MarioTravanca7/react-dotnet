@@ -13,3 +13,15 @@ cmd front/ProAtividade-app: npm install bootswatch
 
 instalar React Rotas -> https://reactrouter.com/en/main
 cmd front/ProAtividade-app: npm install react-router-dom --save
+
+
+JavaScript para Typescript:
+1 - https://create-react-app.dev/ 
+2 - getting start
+3 - building your app
+4 - Adding Typescript
+5 - cmd: \front\pro-ativitade-app>  npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+6 - mudar o index.js para index.tsx
+7 - npm start
+8 - é preciso ter o tsconfi.json se não criar temos que o criar à mão
+9 - depois de ter o tsconfig.json podemos começar alterar o resto para .tsx
